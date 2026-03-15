@@ -120,7 +120,7 @@ impl App {
             if i >= rows.len() { break; }
             let gauge = Gauge::default()
                 .block(Block::bordered())
-                .gqauge_style(Style::default().fg(Color::Red).bg(Color::White))
+                .gauge_style(Style::default().fg(Color::Red).bg(Color::White))
                 .label(label.as_str())
                 .ratio(*ratio);
             _frame.render_widget(gauge, rows[i]);
